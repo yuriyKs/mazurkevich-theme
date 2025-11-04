@@ -1,0 +1,65 @@
+@import '@wordpress/base-styles/breakpoints'; // Default Wordpress breakpoints
+
+:root {
+  // base font size 1rem
+  --base-font-size: clamp(14px, 1vw, 22px);
+
+  // container
+  --content-size: 75rem;
+  --wide-size: 85rem;
+
+  // colors
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #cccccc;
+  --red: #ff0000;
+  --green: #008000;
+  --blue: #0000ff;
+
+  --primary: var(--blue);
+  --secondary: var(--primary);
+  --text-color: var(--black);
+  --bg-color: var(--white);
+
+  // spacings
+  --size-2xs: 0.25rem;
+  --size-xs: 0.5rem;
+  --size-sm: 0.75rem;
+  --size-md: 1rem;
+  --size-lg: 2rem;
+  --size-xl: 3rem;
+  --size-2xl: 4rem;
+
+  // transitions
+  --transition-base: all 0.2s ease-in-out;
+
+  // typo
+  // -- family
+  --primary-font-family: 'Montserrat', sans-serif;
+  --heading-font-family: var(--primary-font-family);
+
+  // -- weights
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-default: var(--font-weight-regular);
+
+  // -- sizes
+  --font-size-h1: 2.3rem;
+  --font-size-h2: 1.6rem;
+  --font-size-h3: 1.3rem;
+  --font-size-h4: 1.2rem;
+  --font-size-h5: 1.1rem;
+  --font-size-h6: 1rem;
+  --font-size-text-xlarge: 1.25rem;
+  --font-size-text-large: 1rem;
+  --font-size-text-medium: 0.75rem;
+  --font-size-text-small: 0.5rem;
+
+  // -- line-height
+  --line-height-heading: 1.1;
+  --line-height-text: 1.4;
+
+  @media (max-width: #{ $break-medium }) {
+    // -- mobile sizes (if different from desktop)
+  }
+}

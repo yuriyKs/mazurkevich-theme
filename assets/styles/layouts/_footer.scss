@@ -1,0 +1,40 @@
+.footer {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--size-md);
+  }
+
+  &__logo {
+    flex-shrink: 0;
+
+    a {
+      display: block;
+    }
+
+    img {
+      max-height: 120px;
+    }
+  }
+
+  .footer-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--size-md);
+
+    li {
+      a {
+        display: block;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  &__copy {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: var(--font-size-text-small);
+    text-align: center;
+  }
+}

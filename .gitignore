@@ -1,0 +1,85 @@
+# ======================================================
+# 🔒 Base ignores
+# ======================================================
+.cache-loader
+dist/
+build/
+node_modules/
+vendor/
+bower_components/
+
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# ======================================================
+# 🧶 Yarn directories (keep only necessary parts)
+# ======================================================
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# ======================================================
+# 🧠 PhpStorm settings
+# ======================================================
+.idea/*
+!.idea/*.iml
+!.idea/modules.xml
+!.idea/php.xml
+!.idea/misc.xml
+!.idea/jsLibraryMappings.xml
+!.idea/vcs.xml
+!.idea/deployment.xml
+!.idea/webServers.xml
+!.idea/sshConfigs.xml
+!.idea/watcherTasks.xml
+
+!.idea/inspectionProfiles
+.idea/inspectionProfiles/*
+!.idea/inspectionProfiles/Project_Default.xml
+!.idea/scopes
+!.idea/codeStyles
+
+# ======================================================
+# 🍎 macOS system files
+# ======================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ======================================================
+# 🐘 PHP / Project cache
+# ======================================================
+.php-cs-fixer.cache
+
+# ======================================================
+# 🔐 Environment files
+# ======================================================
+.env
+.env.local
+
+# ======================================================
+# 🖼️ WordPress specific
+# ======================================================
+wp-content/uploads/
+
+# ======================================================
+# ✅ Custom
+# ======================================================
+# Add your project-specific ignore rules below

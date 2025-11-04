@@ -1,0 +1,19 @@
+/* ---------------------------------------
+	Social networks
+--------------------------------------- */
+.stay-tuned {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--size-xs);
+
+  &__item {
+    display: block;
+
+    svg {
+      display: block;
+      width: auto;
+      height: var(--size-lg);
+    }
+  }
+}
