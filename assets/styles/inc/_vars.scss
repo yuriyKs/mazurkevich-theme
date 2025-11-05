@@ -2,11 +2,11 @@
 
 :root {
   // base font size 1rem
-  --base-font-size: clamp(14px, 1vw, 22px);
+  --base-font-size: clamp(16px, 1vw, 22px);
 
   // container
-  --content-size: 75rem;
-  --wide-size: 85rem;
+  --content-size: 85rem;
+  --wide-size: 95rem;
 
   // colors
   --black: #000000;
@@ -35,7 +35,7 @@
 
   // typo
   // -- family
-  --primary-font-family: 'Montserrat', sans-serif;
+  --primary-font-family: 'Open Sans', sans-serif;
   --heading-font-family: var(--primary-font-family);
 
   // -- weights

@@ -26,8 +26,24 @@
     }
   }
 
+  &-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      font-weight: 700;
+    }
+  }
+
+  &-open {
+    span + span {
+      font-weight: 600;
+    }
+  }
+
   /* TOP BAR Mobile STYLING */
-  @media (max-width: #{ $break-wide - 1 }) {
+  @media (max-width: #{ $break-xlarge - 1 }) {
     .title-bar {
       .menu-icon {
         padding: 0;
@@ -73,6 +89,10 @@
         visibility: visible;
         transform: translateX(0);
       }
+    }
+
+    .main-menu-container {
+      display: none;
     }
 
     .header-menu {
@@ -124,7 +144,7 @@
   }
 
   /* TOP BAR Desktop STYLING */
-  @media (min-width: #{ $break-wide }) {
+  @media (min-width: #{ $break-xlarge }) {
     .title-bar {
       display: none;
       pointer-events: none;
@@ -224,6 +244,12 @@
           /* Styles for 2nd level dropdown menu */
         }
       }
+    }
+  }
+
+  @media (max-width: $break-small) {
+    .header-inner {
+      flex-direction: column;
     }
   }
 }

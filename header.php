@@ -5,6 +5,9 @@
 
 use theme\ThemeNavigation;
 
+$contact_phone = get_field('phone', 'options');
+$working_time = get_field('working_time', 'options');
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -49,6 +52,19 @@ use theme\ThemeNavigation;
                         'walker' => new ThemeNavigation(),
                     ]); ?>
                 </nav>
+            </div>
+        <?php } ?>
+        <?php if ($contact_phone) { ?>
+            <div class="header-contact">
+                <a href="tel:<?php echo sanitize_number($contact_phone); ?>">
+                    <?php echo $contact_phone; ?>
+                </a>
+                <?php if ($working_time) { ?>
+                    <div class="header-open">
+                        <span>Працюємо з</span>
+                        <span><?php echo $working_time; ?></span>
+                    </div>
+                <?php } ?>
             </div>
         <?php } ?>
     </div>
