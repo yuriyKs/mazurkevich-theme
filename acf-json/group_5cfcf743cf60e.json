@@ -22,7 +22,7 @@
         },
         {
             "key": "field_690b40b6ac69b",
-            "label": "Преимущества плитка",
+            "label": "Преимущества",
             "name": "advantages_tile",
             "aria-label": "",
             "type": "repeater",
@@ -376,5 +376,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1762345249
+    "modified": 1762435946
 }

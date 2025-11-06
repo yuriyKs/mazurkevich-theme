@@ -1,0 +1,57 @@
+.acf-product-block {
+  .inner {
+    .posts-filter {
+      &__tabs {
+        display: flex;
+        gap: var(--size-sm);
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__tab {
+        padding: var(--size-2xs) var(--size-xs);
+        border-radius: var(--size-2xs);
+        text-transform: uppercase;
+        min-width: 10rem;
+        min-height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--gray);
+        cursor: pointer;
+
+        &.is-active,
+        &:hover {
+          background-color: var(--green);
+          border-color: var(--green);
+          color: var(--white);
+        }
+      }
+
+      &__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: var(--size-sm);
+
+        article {
+          flex: 0 1 fit-content;
+          max-width: 25%;
+          border: unset;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          .post-thumbnail {
+            min-height: 17rem;
+            object-fit: contain;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

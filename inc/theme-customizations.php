@@ -355,3 +355,40 @@ add_filter('block_categories_all', function ($categories) {
 
     return $categories;
 });
+
+/**
+ * AJAX for initFilterProduct() - main.js.
+ */
+function load_posts_by_category_callback()
+{
+    check_ajax_referer( 'project_nonce', '_ajax_nonce' );
+
+    $cat_id = isset($_POST['cat_id']) ? (int) $_POST['cat_id'] : 0;
+
+    if ($cat_id <= 0) {
+        wp_die();
+    }
+
+    $args = [
+        'post_type' => 'post',
+        'posts_per_page' => 6,
+        'cat' => $cat_id,
+        'no_found_rows' => true,
+    ];
+
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            get_template_part('parts/loop-post', get_post_type());
+        }
+        wp_reset_postdata();
+    } else {
+        echo '<p>' . esc_html__('Скоро у продажу.', 'textdomain') . '</p>';
+    }
+
+    wp_die();
+}
+add_action('wp_ajax_load_posts_by_category', 'load_posts_by_category_callback');
+add_action('wp_ajax_nopriv_load_posts_by_category', 'load_posts_by_category_callback');

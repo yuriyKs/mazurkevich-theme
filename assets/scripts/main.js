@@ -6,7 +6,7 @@ import './plugins/lazyload';
 import './plugins/modernizr.min';
 import 'jquery-match-height';
 // import 'slick-carousel';
-// import '@fancyapps/fancybox/dist/jquery.fancybox.min';
+import '@fancyapps/fancybox/dist/jquery.fancybox.min';
 // import { jarallax, jarallaxElement } from 'jarallax';
 // import ScrollOut from 'scroll-out';
 
